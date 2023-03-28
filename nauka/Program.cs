@@ -32,7 +32,14 @@
                     Console.WriteLine("Wynik mnożenia: " + (a * b));
                     break;
                 case 4:
-                    Console.WriteLine("Wynik dzielenia: " + (a / b));
+                    if (a == 0 || b == 0)
+                    {
+                        Console.WriteLine("NIEDZIELIMY PRZEZ 0!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Wynik dzielenia: " + (a / b));
+                    }
                     break;
             }
         }
