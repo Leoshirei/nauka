@@ -8,9 +8,9 @@
             Console.WriteLine("KALKULATOR");
             Console.WriteLine("---------------------------");
             Console.WriteLine("Podaj pierwszą liczbę: ");
-            a = int.Parse(Console.ReadLine());
+            a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Podaj drugą liczbę: ");
-            b = int.Parse(Console.ReadLine());
+            b = Convert.ToInt32(Console.ReadLine());
             Console.Clear();
             Console.WriteLine("Co chcesz zrobić?");
             Console.WriteLine("1. Dodawanie");
@@ -18,7 +18,7 @@
             Console.WriteLine("3. Mnożenie");
             Console.WriteLine("4. Dzielenie");
             Console.WriteLine("-----------------------");
-            wyb = int.Parse(Console.ReadLine());
+            wyb = Convert.ToInt32(Console.ReadLine());
             Console.Clear();
             switch (wyb)
             {
