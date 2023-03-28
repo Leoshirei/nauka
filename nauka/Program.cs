@@ -8,9 +8,9 @@
             Console.WriteLine("KALKULATOR");
             Console.WriteLine("---------------------------");
             Console.WriteLine("Podaj pierwszą liczbę: ");
-            a = Convert.ToInt32(Console.ReadLine());
+            a = int.Parse(Console.ReadLine());
             Console.WriteLine("Podaj drugą liczbę: ");
-            b = Convert.ToInt32(Console.ReadLine());
+            b = int.Parse(Console.ReadLine());
             Console.Clear();
             Console.WriteLine("Co chcesz zrobić?");
             Console.WriteLine("1. Dodawanie");
@@ -18,7 +18,7 @@
             Console.WriteLine("3. Mnożenie");
             Console.WriteLine("4. Dzielenie");
             Console.WriteLine("-----------------------");
-            wyb = Convert.ToInt32(Console.ReadLine());
+            wyb = int.Parse(Console.ReadLine());
             Console.Clear();
             switch (wyb)
             {
@@ -34,7 +34,7 @@
                 case 4:
                     if (a == 0 || b == 0)
                     {
-                        Console.WriteLine("NIEDZIELIMY PRZEZ 0!");
+                        Console.WriteLine("NIE DZIELIMY PRZEZ 0!");
                     }
                     else
                     {
