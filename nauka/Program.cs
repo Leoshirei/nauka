@@ -4,6 +4,10 @@
     {
         static void Main(string[] args)
         {
+            calc();
+        }
+        void calc()
+        {
             int a, b, wyb;
             Console.WriteLine("KALKULATOR");
             Console.WriteLine("---------------------------");
@@ -23,7 +27,7 @@
             switch (wyb)
             {
                 case 1:
-                    Console.WriteLine("Wynik dodawania: " + (a + b));
+                    plus(a, b);
                     break;
                 case 2:
                     Console.WriteLine("Wynik odejmowania: " + (a - b));
@@ -41,6 +45,24 @@
                         Console.WriteLine("Wynik dzielenia: " + (a / b));
                     }
                     break;
+            }
+        }
+        void plus(int x, int y)
+        {
+            int conti;
+            Console.WriteLine(x + y);
+            Console.WriteLine("Czy chcesz coś jeszcze zrobić?");
+            Console.WriteLine("1. Tak");
+            Console.WriteLine("2. Nie");
+            conti = Convert.ToInt32(Console.ReadLine());
+            if (conti = 1)
+            {
+                Console.clear();
+                calc();
+            }
+            if (conti == 2)
+            {
+                Console.Exit();
             }
         }
     }
