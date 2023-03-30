@@ -5,8 +5,9 @@
         static void Main(string[] args)
         {
             calc();
+            return;
         }
-        void calc()
+        static void calc()
         {
             int a, b, wyb;
             Console.WriteLine("KALKULATOR");
@@ -47,22 +48,40 @@
                     break;
             }
         }
-        void plus(int x, int y)
+        static void plus(int x, int y)
         {
             int conti;
-            Console.WriteLine(x + y);
+            Console.WriteLine((x + y));
             Console.WriteLine("Czy chcesz coś jeszcze zrobić?");
             Console.WriteLine("1. Tak");
             Console.WriteLine("2. Nie");
             conti = Convert.ToInt32(Console.ReadLine());
-            if (conti = 1)
+            if (conti == 1)
             {
-                Console.clear();
+                Console.Clear();
                 calc();
             }
             if (conti == 2)
             {
-                Console.Exit();
+                return;
+            }
+        }
+        static void minus(int x, int y)
+        {
+            int conti;
+            Console.WriteLine("Wynik: " + (x - y));
+            Console.WriteLine("Czy chcesz coś jeszcze zrobić?");
+            Console.WriteLine("1. Tak");
+            Console.WriteLine("2. Nie");
+            conti = Convert.ToInt32(Console.ReadLine());
+            if (conti == 1)
+            {
+                Console.Clear();
+                calc();
+            }
+            if (conti ==2)
+            {
+                return;
             }
         }
     }
